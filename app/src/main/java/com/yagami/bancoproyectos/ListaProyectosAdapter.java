@@ -54,7 +54,7 @@ public class ListaProyectosAdapter extends RecyclerView.Adapter<ListaProyectosAd
             Proyectos proyect = dataset.get(position);
             holder.name.setText(proyect.getNombre_proyecto());
 
-            String url = "https://lexa2334.pythonanywhere.com/api/proyecto/"  +proyect.getNombre_proyecto() ;
+            String url = "https://lexa2334.pythonanywhere.com/api/"  +proyect.getNombre_proyecto() ;
 
             Glide.with(context)
                     .load(url)
